@@ -5,4 +5,4 @@ stages:
       - data/dataset.csv
       - train.py
     outs:
-      - model/model.pkl
+      - models/model.pkl
