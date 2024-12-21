@@ -14,6 +14,6 @@ source venv/Scripts/activate || { echo "Failed to activate virtual environment";
 
 # Run the training script
 echo "Training the model..."
-dvc repro || { echo "Model training failed"; exit 1; }
+python train.py || { echo "Model training failed"; exit 1; }
 
 echo "Model training completed successfully!"
